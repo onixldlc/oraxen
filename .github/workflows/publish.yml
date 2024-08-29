@@ -1,8 +1,10 @@
 name: Build Jar 
 # OR, publish per each commit
 on:
-  push:
-    branches: [ master, develop ]
+  push:  
+    branches: [ "main" ]  
+  pull_request:  
+    branches: [ "main" ] 
 jobs:
   publish:
     runs-on: ubuntu-latest
